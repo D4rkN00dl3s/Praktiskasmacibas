@@ -1,7 +1,15 @@
-#MainParagraph{
+.MainParagraph{
   text-align: left;
+}
+
+#MainHeader{
+  text-align: center;
 }
 
 .firstpanel{
   background-color: chocolate;
+}
+
+.secondpanel{
+  background-color: #BDD4C3;
 }
