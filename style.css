@@ -1,3 +1,7 @@
-h1 {
-  font-size: 25;
+#MainParagraph{
+  text-align: left;
+}
+
+.firstpanel{
+  background-color: chocolate;
 }
