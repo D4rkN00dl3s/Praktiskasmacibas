@@ -1,0 +1,9 @@
+.item{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.caption{
+    display: block;
+}
