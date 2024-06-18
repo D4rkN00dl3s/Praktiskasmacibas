@@ -1,0 +1,10 @@
+.custom-container{
+    background-color: aquamarine;
+    height: 80vh;
+    padding-top: 1cm;
+}
+
+.custom-img {
+    height: 550px;
+    width: auto;
+}
