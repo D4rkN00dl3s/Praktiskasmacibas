@@ -10,8 +10,8 @@
 </head>
 <body>
 
-<div class="p-5 text-center" style="background-color: pink; height: 15vh;">
-  <h1 class="text-white" style="text-shadow: 2px 2px black; padding-top: 20px;">Showcase</h1>
+<div class="p-5 text-center" style="background-color: pink; height: auto;">
+  <h1 class="text-white" style="text-shadow: 2px 2px black;">Showcase</h1>
 </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="height: auto;">
@@ -24,7 +24,14 @@
         <a class="nav-link disabled text-white">Showcase</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <div class="dropdown">
+          <button type="button" class="btn dropdown-toggle text-white flex-grow-0" data-bs-toggle="dropdown">Languages:</button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#C++">C++</a></li>
+            <li><a class="dropdown-item" href="#Java">Java</a></li>
+            <li><a class="dropdown-item" href="#Python">Python</a></li>
+          </ul>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
@@ -33,8 +40,8 @@
   </div>
 </nav>
 
-<div class="custom-container">
-  <div class="row" style="height: 80vh; margin-right: 0;">
+<div class="custom-container" style="background-color: aquamarine;" id="C++">
+  <div class="row" style="margin-right: 0;">
     <div class="col-sm-5" style="display: flex;justify-content: center; align-items: center;">
         <img src="src/C++_Logo.png" alt="C++" class="custom-img">
     </div>
@@ -47,8 +54,44 @@
                 <img src="src/C++_4.png" style="width: 545px;">
                 <img src="src/C++_3.png" style="width: 545px;">
         </div>
+    </div>
   </div>
 </div>
+
+<div class="custom-container" style="background-color: rgb(151, 252, 218);" id="Java">
+  <div class="row" style="margin-right: 0;">
+    <div class="col-sm-5" style="display: flex;justify-content: center; align-items: center;">
+        <img src="src/Java.png" alt="C++" class="custom-img">
+    </div>
+    <div class="col-sm-5">
+        <div class="row">
+            <h2 class="text-white" style="text-shadow: 2px 2px black">My programs examples:</h2>
+        </div>
+        <div class="col-auto">
+                <img src="src/C++_1.png">
+                <img src="src/C++_4.png" style="width: 545px;">
+                <img src="src/C++_3.png" style="width: 545px;">
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="custom-container" style="background-color: rgb(170, 248, 222);" id="Python">
+  <div class="row" style="margin-right: 0;">
+    <div class="col-sm-5" style="display: flex;justify-content: center; align-items: center;">
+        <img src="src/Python.png" alt="C++" class="custom-img">
+    </div>
+    <div class="col-sm-5">
+        <div class="row">
+            <h2 class="text-white" style="text-shadow: 2px 2px black">My programs examples:</h2>
+        </div>
+        <div class="col-auto">
+                <img src="src/C++_1.png">
+                <img src="src/C++_4.png" style="width: 545px;">
+                <img src="src/C++_3.png" style="width: 545px;">
+        </div>
+    </div>
+  </div>
 </div>
 
 <div class="p-4 bg-dark text-white text-center" style="height: auto;">
