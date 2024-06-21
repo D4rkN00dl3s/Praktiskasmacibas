@@ -2,67 +2,247 @@ var answer;
 var currentQuestionNumber = 1;
 var currentScoreValue = 0;
 
-function AButtonPressed(questionNumberID, questionID, answerID, currentScoreID) {
+function AButtonPressed(questionNumberID, questionID, answerID, currentScoreID, restartButtonID) {
     answer = 1;
-    if (currentQuestionNumber == 1) goToQuestion2(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 2) goToQuestion3(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 3) goToQuestion4(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 4) goToQuestion5(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 5) goToQuestion6(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 6) goToQuestion7(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 7) goToQuestion8(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 8) goToQuestion9(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 9) goToQuestion10(questionNumberID, questionID, answerID);
-    updateScore(currentScoreID);
-    currentQuestionNumber++;
+    if (currentQuestionNumber == 1) {
+        goToQuestion2(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        var restartButton = document.getElementById(restartButtonID);
+        restartButton.style.zIndex = 'auto';
+        return;
+    }
+    if (currentQuestionNumber == 2) {
+        goToQuestion3(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 3) {
+        goToQuestion4(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 4) {
+        goToQuestion5(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 5) {
+        goToQuestion6(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 6) {
+        goToQuestion7(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 7) {
+        goToQuestion8(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 8) {
+        goToQuestion9(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 9) {
+        goToQuestion10(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
 }
 
-function BButtonPressed(questionNumberID, questionID, answerID, currentScoreID) {
+function BButtonPressed(questionNumberID, questionID, answerID, currentScoreID, restartButtonID) {
     answer = 2;
-    if (currentQuestionNumber == 1) goToQuestion2(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 2) goToQuestion3(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 3) goToQuestion4(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 4) goToQuestion5(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 5) goToQuestion6(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 6) goToQuestion7(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 7) goToQuestion8(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 8) goToQuestion9(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 9) goToQuestion10(questionNumberID, questionID, answerID);
-    updateScore(currentScoreID);
-    currentQuestionNumber++;
+    if (currentQuestionNumber == 1) {
+        goToQuestion2(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        var restartButton = document.getElementById(restartButtonID);
+        restartButton.style.zIndex = 'auto';
+        return;
+    }
+    if (currentQuestionNumber == 2) {
+        goToQuestion3(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 3) {
+        goToQuestion4(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 4) {
+        goToQuestion5(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 5) {
+        goToQuestion6(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 6) {
+        goToQuestion7(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 7) {
+        goToQuestion8(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 8) {
+        goToQuestion9(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 9) {
+        goToQuestion10(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
 }
 
-function CButtonPressed(questionNumberID, questionID, answerID, currentScoreID) {
+function CButtonPressed(questionNumberID, questionID, answerID, currentScoreID, restartButtonID) {
     answer = 3;
-    if (currentQuestionNumber == 1) goToQuestion2(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 2) goToQuestion3(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 3) goToQuestion4(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 4) goToQuestion5(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 5) goToQuestion6(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 6) goToQuestion7(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 7) goToQuestion8(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 8) goToQuestion9(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 9) goToQuestion10(questionNumberID, questionID, answerID);
-    updateScore(currentScoreID);
-    currentQuestionNumber++;
+    if (currentQuestionNumber == 1) {
+        goToQuestion2(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        var restartButton = document.getElementById(restartButtonID);
+        restartButton.style.zIndex = 'auto';
+        return;
+    }
+    if (currentQuestionNumber == 2) {
+        goToQuestion3(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 3) {
+        goToQuestion4(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 4) {
+        goToQuestion5(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 5) {
+        goToQuestion6(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 6) {
+        goToQuestion7(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 7) {
+        goToQuestion8(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 8) {
+        goToQuestion9(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 9) {
+        goToQuestion10(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
 }
 
-function DButtonPressed(questionNumberID, questionID, answerID, currentScoreID) {
+function DButtonPressed(questionNumberID, questionID, answerID, currentScoreID, restartButtonID) {
     answer = 4;
-    if (currentQuestionNumber == 1) goToQuestion2(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 2) goToQuestion3(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 3) goToQuestion4(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 4) goToQuestion5(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 5) goToQuestion6(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 6) goToQuestion7(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 7) goToQuestion8(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 8) goToQuestion9(questionNumberID, questionID, answerID);
-    if (currentQuestionNumber == 9) goToQuestion10(questionNumberID, questionID, answerID);
-    updateScore(currentScoreID);
-    currentQuestionNumber++;
+    if (currentQuestionNumber == 1) {
+        goToQuestion2(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        var restartButton = document.getElementById(restartButtonID);
+        restartButton.style.zIndex = 'auto';
+        return;
+    }
+    if (currentQuestionNumber == 2) {
+        goToQuestion3(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 3) {
+        goToQuestion4(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 4) {
+        goToQuestion5(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 5) {
+        goToQuestion6(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 6) {
+        goToQuestion7(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 7) {
+        goToQuestion8(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 8) {
+        goToQuestion9(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
+    if (currentQuestionNumber == 9) {
+        goToQuestion10(questionNumberID, questionID, answerID);
+        updateScore(currentScoreID);
+        currentQuestionNumber++;
+        return;
+    }
 }
 
-function restartButtonPressed(questionNumberID, questionID, answerID, currentScoreID, previousScoreID) {
+function restartButtonPressed(questionNumberID, questionID, answerID, currentScoreID, previousScoreID, restartButtonID) {
     answer = null;
     currentQuestionNumber = 1;
     goToQuestion1(questionNumberID, questionID, answerID);
@@ -71,6 +251,8 @@ function restartButtonPressed(questionNumberID, questionID, answerID, currentSco
     currentScoreValue = 0;
     var currentScore = document.getElementById(currentScoreID);
     currentScore.textContent = `Current Score: ${currentScoreValue}`;
+    var restartButton = document.getElementById(restartButtonID);
+    restartButton.style.zIndex = '-1';
 }
 
 function goToQuestion1(questionNumberID, questionID, answerID) {
