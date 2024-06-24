@@ -1,13 +1,10 @@
-.custom-container{
-    height: 110vh;
-    padding-top: 1cm;
-}
-
-.custom-img {
-    height: 550px;
-    width: auto;
-}
-
 html {
     scroll-behavior: smooth;
 }
+
+img#cpp-logo, img#python-logo {
+    width: 100%; /* Ensures image fills its container */
+    max-width: 100%; /* Prevents image from exceeding its container's width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 800px; /* Set maximum height as per your design */
+  }

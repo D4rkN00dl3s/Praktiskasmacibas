@@ -8,116 +8,133 @@
   <link href="showcase.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="showcase.js"></script>
+  <style>
+    /* Additional styles can be added here */
+    /* Adjustments for fixed header */
+    #header {
+      z-index: 1000; /* Ensure it's above other content */
+    }
+  </style>
 </head>
 <body>
 
-<header style="position: fixed; top: 0; right: 0; display: none;" id="header">
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="height: auto;">
+<header style="position: fixed; top: 0; right: 0; left: 0; background-color: #343a40; display: none;" id="header">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link disabled text-white">Showcase</a>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-            <button type="button" class="btn dropdown-toggle text-white flex-grow-0" data-bs-toggle="dropdown">Languages:</button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#C++">C++</a></li>
-              <li><a class="dropdown-item" href="#Java">Java</a></li>
-              <li><a class="dropdown-item" href="#Python">Python</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#home" onclick="hideElement('header')">Home</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<div class="p-5 text-center" style="background-color: pink; height: auto;" id="home">
-  <h1 class="text-white" style="text-shadow: 2px 2px black;">Showcase</h1>
-</div>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="height: auto;">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="main.html">Martin Osit</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled text-white">Showcase</a>
-      </li>
-      <li class="nav-item">
-        <div class="dropdown">
-          <button type="button" class="btn dropdown-toggle text-white flex-grow-0" data-bs-toggle="dropdown">Languages:</button>
+      <a class="navbar-brand">Showcase</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="main.html">Martin Osit</a>
+          </li>
+          <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown">Languages:</button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#C++" onclick="revealElement('header')">C++</a></li>
             <li><a class="dropdown-item" href="#Java" onclick="revealElement('header')">Java</a></li>
             <li><a class="dropdown-item" href="#Python" onclick="revealElement('header')">Python</a></li>
           </ul>
-        </div>
-      </li>
-    </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="p-5 text-center" style="background-color: pink;" id="home">
+  <h1 class="text-white" style="text-shadow: 2px 2px black;">Showcase</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Showcase</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="main.html">Martin Osit</a>
+        </li>
+        <button type="button" class="btn dropdown-toggle text-white" data-bs-toggle="dropdown">Languages:</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#C++" onclick="revealElement('header')">C++</a></li>
+          <li><a class="dropdown-item" href="#Java" onclick="revealElement('header')">Java</a></li>
+          <li><a class="dropdown-item" href="#Python" onclick="revealElement('header')">Python</a></li>
+        </ul>
+      </ul>
+    </div>
   </div>
 </nav>
 
-<div class="custom-container" style="background-color: aquamarine;" id="C++">
-  <div class="row" style="margin-right: 0;">
-    <div class="col-sm-5" style="display: flex;justify-content: center; align-items: center;">
-        <img src="src/C++_Logo.png" alt="C++" class="custom-img">
+<div class="container-fluid" style="background-color: aquamarine;" id="C++">
+  <div class="row">
+    <div class="col-md-5 d-flex justify-content-center align-items-center">
+      <img id="cpp-logo" src="src/C++-Logo.png" alt="C++" class="img-fluid">
     </div>
-    <div class="col-sm-5">
-        <div class="row">
-            <h2 class="text-white" style="text-shadow: 2px 2px black">My programs examples:</h2>
+    <div class="col-md-7">
+      <h2 class="text-white" style="text-shadow: 2px 2px black;">My programs examples:</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="src/C++_1.png" class="img-fluid">
         </div>
-        <div class="col-auto">
-                <img src="src/C++_1.png">
-                <img src="src/C++_4.png" style="width: 545px;">
-                <img src="src/C++_3.png" style="width: 545px;">
+        <div class="col-md-4">
+          <img src="src/C++_4.png" class="img-fluid">
         </div>
-    </div>
-  </div>
-</div>
-
-<div class="custom-container" style="background-color: rgb(151, 252, 218);" id="Java">
-  <div class="row" style="margin-right: 0;">
-    <div class="col-sm-5" style="display: flex;justify-content: center; align-items: center;">
-        <img src="src/Java.png" alt="C++" class="custom-img">
-    </div>
-    <div class="col-sm-5">
-        <div class="row">
-            <h2 class="text-white" style="text-shadow: 2px 2px black">My programs examples:</h2>
+        <div class="col-md-4">
+          <img src="src/C++_3.png" class="img-fluid">
         </div>
-        <div class="col-auto">
-                <img src="src/C++_1.png">
-                <img src="src/C++_4.png" style="width: 545px;">
-                <img src="src/C++_3.png" style="width: 545px;">
-        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="custom-container" style="background-color: rgb(170, 248, 222);" id="Python">
-  <div class="row" style="margin-right: 0;">
-    <div class="col-sm-5" style="display: flex;justify-content: center; align-items: center;">
-        <img src="src/Python.png" alt="C++" class="custom-img">
+<div class="container-fluid" style="background-color: rgb(151, 252, 218);" id="Java">
+  <div class="row">
+    <div class="col-md-5 d-flex justify-content-center align-items-center">
+      <img src="src/Java_Logo.png" alt="Java" class="img-fluid">
     </div>
-    <div class="col-sm-5">
-        <div class="row">
-            <h2 class="text-white" style="text-shadow: 2px 2px black">My programs examples:</h2>
+    <div class="col-md-7">
+      <h2 class="text-white" style="text-shadow: 2px 2px black;">My programs examples:</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="src/Java_1.png" class="img-fluid">
         </div>
-        <div class="col-auto">
-                <img src="src/C++_1.png">
-                <img src="src/C++_4.png" style="width: 545px;">
-                <img src="src/C++_3.png" style="width: 545px;">
+        <div class="col-md-4">
+          <img src="src/Java_2.png" class="img-fluid">
         </div>
+        <div class="col-md-4">
+          <img src="src/Java_3.png" class="img-fluid">
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="p-4 bg-dark text-white text-center" style="height: auto;">
+<div class="container-fluid" style="background-color: rgb(170, 248, 222);" id="Python">
+  <div class="row">
+    <div class="col-md-5 d-flex justify-content-center align-items-center">
+      <img id="python-logo" src="src/Python-Logo.png" alt="Python" class="img-fluid">
+    </div>
+    <div class="col-md-7">
+      <h2 class="text-white" style="text-shadow: 2px 2px black;">My programs examples:</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="src/Python_1.png" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="src/Python_2.png" class="img-fluid">
+        </div>
+        <div class="col-md-4">
+          <img src="src/Python_3.png" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="p-4 bg-dark text-white text-center">
   <p>Footer</p>
 </div>
 
