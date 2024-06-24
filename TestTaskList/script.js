@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     displayTasks(null);
                 } else {
                     currentCategory = category;
-                    displayTasks(currentCategory);
+                    displayTasks(currentCategory, li);
                     taskForm.style.display = 'flex';
                     li.insertAdjacentElement('afterend', taskForm);
                 }
@@ -76,10 +76,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Function to display tasks
-    function displayTasks(category) {
+    function displayTasks(category, categoryElement) {
         // Remove existing task list if present
-        const existingTaskList = taskForm.nextElementSibling;
-        if (existingTaskList && existingTaskList.classList.contains('task-list')) {
+        const existingTaskList = categoryList.querySelector('.task-list');
+        if (existingTaskList) {
             existingTaskList.remove();
         }
 
@@ -103,14 +103,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 tasks.splice(index, 1);
                 allTasks[category] = tasks;
                 saveTasks(allTasks);
-                displayTasks(category);
+                displayTasks(category, categoryElement);
             });
             li.appendChild(deleteButton);
             taskList.appendChild(li);
         });
 
-        // Insert the task list after the task form
-        taskForm.insertAdjacentElement('afterend', taskList);
+        // Insert the task form and task list in the correct order
+        taskForm.style.display = 'flex';
+        categoryElement.insertAdjacentElement('afterend', taskList);
+        taskList.insertAdjacentElement('beforebegin', taskForm);
     }
 
     // Event listener for category form submission
@@ -139,7 +141,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             allTasks[currentCategory].push(taskValue);
             saveTasks(allTasks);
-            displayTasks(currentCategory);
+            const categoryElements = categoryList.querySelectorAll('.category-item');
+            categoryElements.forEach(function(categoryElement) {
+                if (categoryElement.textContent.includes(currentCategory)) {
+                    displayTasks(currentCategory, categoryElement);
+                }
+            });
             taskInput.value = '';
         }
     });
