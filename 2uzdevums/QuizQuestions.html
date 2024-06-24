@@ -34,6 +34,22 @@
     <meta property="og:title" content="QuizQuestions" />
     <meta property="og:type" content="website" />
     <meta data-intl-tel-input-cdn-path="intlTelInput/" />
+    <style>
+      /* Custom CSS for responsiveness */
+      /* Adjustments for smaller screens */
+      @media screen and (max-width: 768px) {
+        .u-sheet-1 {
+          padding: 20px; /* Adding padding to the sheet for better spacing on smaller screens */
+        }
+        .u-text-5 {
+          white-space: pre-wrap; /* Allowing the answers list to wrap on smaller screens */
+        }
+        .u-btn {
+          display: block; /* Ensuring buttons stack vertically on smaller screens */
+          margin-bottom: 10px; /* Adding margin between buttons */
+        }
+      }
+    </style>
   </head>
   <body
     data-path-to-root="./"
@@ -56,7 +72,7 @@
           id="sec-a780"
         >
           <div class="u-clearfix u-sheet u-sheet-1">
-            <h3 class="u-align-center u-text u-text-1">QUIZ<br />Web App</h3>
+            <h3 class="u-text u-text-1">&emsp;QUIZ<br/>Web App</h3>
           </div>
         </div>
         <div
@@ -148,68 +164,20 @@
         </div>
       </div>
     </header>
-    <section
-      class="u-clearfix u-container-align-center u-image u-section-1"
-      id="sec-2a48"
-      data-image-width="1920"
-      data-image-height="1280"
-    >
+    <section class="u-clearfix u-container-align-center u-image u-section-1" id="sec-2a48" data-image-width="1920" data-image-height="1280">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <div
-          class="u-border-3 u-border-palette-1-light-2 u-container-style u-group u-radius u-shape-round u-group-1"
-        >
+        <div class="u-border-3 u-border-palette-1-light-2 u-container-style u-group u-radius u-shape-round u-group-1">
           <div class="u-container-layout u-container-layout-1">
-            <p class="u-align-left u-text u-text-body-alt-color u-text-1" id="currentScore">
-              Current Score: 0
-            </p>
-            <a
-              href="#"
-              class="u-border-none u-btn u-btn-round u-button-style u-palette-4-base u-radius u-btn-1"
-              onclick="restartButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'previousScore', 'restartButton')"
-              style="z-index: -1;"
-              id="restartButton"
-              >Restart
-            </a>
-            <p class="u-align-left u-text u-text-body-alt-color u-text-2" id="previousScore">
-              Previous Score: 0
-            </p>
-            <h2 class="u-align-center u-text u-text-body-alt-color u-text-3" id="QuestionNumber">
-              Question №1:
-            </h2>
-            <h4 class="u-align-center u-text u-text-body-alt-color u-text-4" id="Question">
-              What is the largest planet in our solar system?
-            </h4>
-            <h4
-              class="u-align-left u-text u-text-body-alt-color u-text-default u-text-5"
-              id="Answers"
-            >
-              Possible answers:<br />A. Earth<br />B. Mars<br />C. Jupiter<br />D.
-              Saturn
-            </h4>
-            <a
-              href="#"
-              class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius u-btn-2"
-              onclick="AButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'restartButton')"
-              >A
-            </a>
-            <a
-              href="#"
-              class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-2 u-radius u-btn-3"
-              onclick="BButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'restartButton')"
-              >B
-            </a>
-            <a
-              href="#"
-              class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-radius u-text-body-color u-btn-4"
-              onclick="CButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'restartButton')"
-              >C
-            </a>
-            <a
-              href="#"
-              class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-4 u-radius u-text-body-color u-btn-5"
-              onclick="DButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'restartButton')"
-              >D
-            </a>
+            <p class="u-align-left u-text u-text-body-alt-color u-text-1" id="currentScore">Current Score: 0</p>
+            <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-palette-4-base u-radius u-btn-1" onclick="restartButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'previousScore', 'restartButton')" style="z-index: -1;" id="restartButton">Restart</a>
+            <p class="u-align-left u-text u-text-body-alt-color u-text-2" id="previousScore">Previous Score: 0</p>
+            <h2 class="u-align-center u-text u-text-body-alt-color u-text-3" id="QuestionNumber">Question №1:</h2>
+            <h4 class="u-align-center u-text u-text-body-alt-color u-text-4" id="Question">What is the largest planet in our solar system?</h4>
+            <h4 class="u-align-left u-text u-text-body-alt-color u-text-default u-text-5" id="Answers">Possible answers:<br />A. Earth<br />B. Mars<br />C. Jupiter<br />D. Saturn</h4>
+            <a href="#" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius u-btn-2" onclick="AButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'restartButton')">A</a>
+            <a href="#" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-2 u-radius u-btn-3" onclick="BButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'restartButton')">B</a>
+            <a href="#" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-3 u-radius u-text-body-color u-btn-4" onclick="CButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'restartButton')">C</a>
+            <a href="#" class="u-align-center u-border-none u-btn u-btn-round u-button-style u-custom-color-4 u-radius u-text-body-color u-btn-5" onclick="DButtonPressed('QuestionNumber', 'Question', 'Answers', 'currentScore', 'restartButton')">D</a>
           </div>
         </div>
       </div>
