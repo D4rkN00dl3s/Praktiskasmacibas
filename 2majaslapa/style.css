@@ -1,9 +1,42 @@
-.item{
+.header {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    text-shadow: 2px 2px black;
+}
+
+.header h4 {
+    text-shadow: 1px 1px #f06262;
+}
+
+.item {
     vertical-align: top;
     display: inline-block;
     text-align: center;
 }
 
-.caption{
+.caption {
     display: block;
+}
+
+.other-webpages-btn {
+    background-color: #a83266;
+}
+
+.dropdown-toggle {
+    background-color: #a83266 !important; /* Set background color */
+    color: white !important; /* Set text color */
+    border: none !important; /* Remove border */
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+    background-color: #a83266 !important; /* Set background color on hover/focus */
+    color: white !important; /* Set text color on hover/focus */
+    box-shadow: none !important; /* Remove box shadow */
 }
